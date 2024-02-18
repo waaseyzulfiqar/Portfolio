@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* navbar started */
+
+header{
+    background-color: #0089B7;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.logo h1{
+    font-size: 2.4rem;
+}
+
+ul{
+    display: flex;
+    gap: 1em;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+ul li:hover{
+    border-bottom: 0.4rem #fff700 solid;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* navbar ended */
+
+
+/* hero section started */
+
+.hero-section{
+    background-color: #003D62;
+    padding: 2.2em;
+    border-bottom: 4px solid #0089b7;
+    max-height: 100vh;
+}
+
+
+.hero-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-img img{
+    width: 350px;
+}
+
+.hi-txt{
+    font-size: 5rem;
+    color: #fff700;
+    font-weight: bold;
+}
+
+.name{
+    font-size: 5rem;
+}
+
+.hero-txt h2{
+    font-size: 3.3rem;
+    font-weight: bold;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+
+/* hero section ended */
+
+
+
+/* Project section started */
+
+#project-section {
+    background-color: #003251;
+    padding: 30px;
+  }
+  
+  #project-section h2 {
+    font-size: 4.2rem;
+    text-align: center;
+    padding: 4rem 0;
+  }
+
+
+  .c-content{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+
+  .card img{
+    width: 100%;
+  }
+
+  .card_content h3{
+    color: #003251;
+    text-align: center;
+  }
+
+  .card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+    padding-bottom: 2em;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+  }
+  .card:hover img {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+  }
+  .card:hover .card_content{
+    background: white;
+    color: #003d62;
+    transform: translateY(0px);
+  }
+  
+  .card_content {
+    padding: 2rem;
+    position: relative;
+    top: -6.5rem;
+    margin-bottom: -4rem;
+    transition: 0.5s ease-in-out;
+    transform: translateY(100px);
+  }
+  
+  
+/* Project section ended */
+
+
+/* contact section started */
+
+.contact-section{
+    height: 500px;
+    background-color: #003D62;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.contact-section h1{
+  font-size: 5rem;
+  padding-bottom: 20px;
+}
+
+.top-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-section a{
+  font-size: 2.2rem;
+  text-decoration: none;
+}
+
+.d-flex{
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+
+.bottom-section a{
+  font-size: 2.2rem;
+  text-decoration: none;
+}  
+
+
+.bottom-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+/* contact section ended */
+
+footer {
+  background-color: #003251;
+  padding: 2rem;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+
+@media (max-width: 690px) {
+  html{
+    font-size: 52%;
+    /* width: 100vh; */
+  }
+
+
+  .hero-img img{
+    width: 360px;
+    padding-bottom: 15px;
+  }
+
+  .hero-content{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-section h1{
+    font-size: 4.2rem;
+  }
+
+  .c-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  #project-section h2{
+    padding-bottom: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
